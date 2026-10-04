@@ -1,0 +1,13 @@
+{
+  "name": "azure-portfolio-demo",
+  "version": "1.0.0",
+  "private": true,
+  "engines": { "node": ">=24 <25" },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^4.22.3"
+  }
+}

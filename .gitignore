@@ -1,0 +1,16 @@
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+# Terraform lock files are committed for reproducible provider selection.
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+!*.tfvars.json.example
+.env
+.env.*
+!.env.example
+node_modules/
+*.zip
+crash.log
+crash.*.log
