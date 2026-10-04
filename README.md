@@ -35,9 +35,9 @@ Terraform defines the Azure resources separately from the application package. A
 
 The workflow runs Terraform formatting, locked provider initialisation, schema validation, mocked configuration tests and Node.js HTTP tests without Azure credentials. The badge reports the latest workflow status on `main`.
 
-Azure provisioning and live runtime behaviour remain unverified. The application currently returns HTTP responses only: it does not read vault secrets, use Blob Storage or emit Application Insights telemetry. `/health` reports process liveness and has no downstream dependency checks.
+The application currently returns HTTP responses only: it does not read vault secrets, use Blob Storage or emit Application Insights telemetry. `/health` reports process liveness and has no downstream dependency checks.
 
-## Operational limits
+## Design and operations
 
 App Service, Key Vault and Storage have public network endpoints. Storage container privacy restricts anonymous data access; it does not create a private endpoint. VNet integration applies to outbound App Service traffic, with no private inbound endpoint or firewall enforcement defined.
 
